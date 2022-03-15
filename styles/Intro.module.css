@@ -1,0 +1,165 @@
+.container {
+  width: 100%;
+  height: calc(100vh - 50px);
+  display: flex;
+  overflow: hidden;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  background: url("../images/bannerbg.jpg");
+}
+
+.card {
+  flex: 1;
+  padding: 50px 100px;
+  padding-right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+}
+.bannerright {
+  width: 500px;
+  background: white;
+  text-align: center;
+  padding: 50px;
+  margin: 40px;
+  border-radius: 20px;
+}
+.bannerright p {
+  font-size: 18px;
+}
+.bannerright h2 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.bannerform {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px 50px;
+}
+.pinput {
+  color: #0b5b49;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  line-height: 22px;
+  background-color: transparent;
+  border: 2px solid #0b5b49;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+.pinput::placeholder {
+  color: #0b5b49;
+}
+
+.pinput:focus {
+  border: 2px solid #0b5b49;
+}
+.sbtn {
+  width: 60%;
+  background: #0b5b49;
+  border-radius: 30px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  animation: sbtn 1s ease infinite alternate;
+}
+.sbtn:hover {
+  background: #29967e;
+  color: #fff;
+}
+@keyframes sbtn {
+  to {
+    background-color: #073027;
+  }
+}
+
+.title {
+  font-size: 40px;
+  margin: 0;
+}
+
+.brandName {
+  color: #0b5b49;
+  font-size: 40px;
+  font-family: "Roboto Slab", serif;
+}
+
+.desc {
+  font-size: 20px;
+  margin: 0;
+}
+
+.button {
+  border: none;
+  background-color: #0b5b49;
+  color: white;
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100px;
+  cursor: pointer;
+  animation: button 1s ease infinite alternate;
+}
+
+@keyframes button {
+  to {
+    background-color: rgb(2, 63, 2);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    height: calc(70vh - 50px);
+  }
+  .title {
+    font-size: 30px;
+  }
+  
+  .brandName {
+    font-size: 30px;
+  }
+
+  .card {
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .bannerright {
+    width: auto;
+    padding: 20px;
+    margin: 40px 20px;
+  }
+  .bannerform{
+    padding: 0px 10px;
+  }
+  .sbtn {
+    font-size: 15px;
+  }
+  .imgcard{
+    display: none;
+  }
+  .pinput {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+}
+
